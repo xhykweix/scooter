@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Scooter</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="pic" />
+    <string name="password_src">密碼</string>
+    <string name="account_src">帳號</string>
+    <string name="register_pic">註冊</string>
+    <string name="sign_pic">登入</string>
+    <string name="title_activity_main">Main</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">首頁</string>
+    <string name="menu_setting">設定</string>
+    <string name="menu_logout">登出</string>
+    <string name="connect">連線</string>
+    <string name="disconnect">中斷連線</string>
+    <string name="googleDriveConnect">連結google雲端硬碟</string>
+    <string name="account">請輸入帳號</string>
+    <string name="password">請輸入密碼</string>
+    <string name="name">請輸入使用者名稱</string>
+    <string name="email">請輸入電子郵件</string>
+    <string name="telephone">請輸入手機</string>
+    <string name="create_account">註冊</string>
+    <string name="keep_account">是否要記住登入資料</string>>
+    <string name="tab_menu_main">首頁</string>
+    <string name="tab_menu_locate">地圖</string>
+    <string name="tab_menu_title">Scooter</string>
+    <string name="title_activity_locate">Map</string>
+    <string name="名稱">名稱</string>
+    <string name="title_activity_home">home</string>
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

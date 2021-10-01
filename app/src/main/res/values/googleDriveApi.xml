@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_id" templateMergeStrategy="preserve" translatable="false">532207916767-nvd8u2147go1e9ubj4ushp6adfi3vr48.apps.googleusercontent.com</string>
+    <string name="client_secret">lxfI81NTP3S7ye0_JmgTRGEW</string>
+    <string name="grant_type">urn:ietf:params:oauth:grant-type:device_code</string>
+    <string name="scope" templateMergeStrategy="preserve" translatable="false">https://www.googleapis.com/auth/drive.file</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1097829622359",
+    "project_id": "scooter-a8cf6",
+    "storage_bucket": "scooter-a8cf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097829622359:android:e37e7150d791d5da693912",
+        "android_client_info": {
+          "package_name": "com.example.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097829622359-e3htmoiidhu7cieb28v33a03ltsojh2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notification",
+            "certificate_hash": "0a9a6850cc1a129f0ca2a568e4f7d1c3664d2069"
+          }
+        },
+        {
+          "client_id": "1097829622359-ek7c84ifrsj8621qpjcet3sgub47b73u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwj4bNp6-6hmsduYB7SG6Ze11-FEnIh80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097829622359-ek7c84ifrsj8621qpjcet3sgub47b73u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

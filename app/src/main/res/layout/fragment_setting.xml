@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <Button
+        android:id="@+id/googleDriveConnect"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:gravity="left"
+        android:text="@string/googleDriveConnect"
+        android:background="@drawable/button_background"
+        />
+
+    <Button
+        android:id="@+id/Pair"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:gravity="left"
+        android:text="配對"
+        android:background="@drawable/button_background"/>
+
+    <Button
+        android:id="@+id/AutoTurnSignalSet"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="自動打方向燈距離"
+        android:background="@drawable/button_background"/>
+</LinearLayout>

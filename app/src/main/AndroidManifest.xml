@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notification">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="29" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 註冊藍芽控制權 -->
+    <uses-feature android:name="android.hardware.bluetooth_le"></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 註冊網路服務 -->
+    <uses-feature android:name="android.software.companion_device_setup" /> <!-- 註冊裝置頁面 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".WebDrive"></activity>
+        <!-- 關閉狀態列、標題 android:theme= "@style/AppTheme.NoActionBar" -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- API map key in value -->
+        <activity
+            android:name=".Locate"
+            android:label="@string/title_activity_locate" /> <!-- -android:usesCleartextTraffic="true" -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".LoginMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 註冊通知欄擷取的服務 NotificationMonitorService -->
+        <activity android:name=".WebDrive" />
+
+        <service
+            android:name=".NotificationMonitorService"
+            android:label="NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="internet.MyFirebaseService" android:label="Firbase">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MainService" android:label="ScooterBluetooth" >
+            <intent-filter>
+                <action android:name="tt" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".getGpsService" android:label="GPS"/>
+        <service android:name=".BleCallBack" android:label="BleCallBack"/>
+        <service
+            android:name="Fragment.GoogleDriveConnectService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>
